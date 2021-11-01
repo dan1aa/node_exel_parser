@@ -17,7 +17,7 @@ router.post("/api/save", async (req, res) => {
             await newFile.save()
         }
         res.status(200).end(JSON.stringify({
-            message: 'success'
+            message: 'success',
         }))
     }
     catch(e) {
